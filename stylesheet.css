@@ -336,12 +336,19 @@ a:hover , .btn:hover{
 }
 
 
-.menu-item:hover .item-pic img{
-    opacity: 1;
-    transform: rotate(360deg);
+.menu-item:not(:hover) .item-pic {
+    transition: none;
 }
+.menu-item:hover .item-pic{
+    opacity: 1;
+    transform: rotate3d(0.5,.8,1,360deg);
+}
+.menu-item:hover .item-pic img{
+    transform: scale(1.1);
+}
+
 .menu-item:hover {
-    transform: scale(1.2);
+    transform: scale(1.03);
     opacity: 1;
 }
 
